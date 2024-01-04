@@ -53,7 +53,23 @@ docker build -t todo-app .
 docker run -d -p 5000:5000 todo-app
 ```
 
+## DockerHub
+
+1. Pull the image from DockerHub.
+
+   ```bash
+   docker pull faizan44/todo-app
+   ```
+
+2. Run the Docker container.
+
+   ```bash
+   docker run -d -p 5000:5000 faizan44/todo-app
+   ```
+
 Access the app at [http://localhost:5000](http://localhost:5000).
+
+---
 
 ## Contributing
 
