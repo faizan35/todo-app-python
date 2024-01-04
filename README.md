@@ -1,53 +1,59 @@
-# ToDo List Web Application
+# ToDo App - Python
 
-This is a simple ToDo list web application built with Flask (Python web framework).
+## Description
+
+This is a simple ToDo list web application built with Flask, a Python web framework.
 
 ![todo-img](static/todo-img.png)
 
+## Prerequisites
+
+- Python 3.11.5
+
 ## Getting Started
 
-### Prerequisites
+1. Clone this repository to your local machine.
 
-- Python (3.x recommended)
-- Flask
+   ```
+   git clone https://github.com/faizan35/todo-app-python.git
+   ```
 
-### Installing Dependencies
+2. Navigate to the project directory.
 
-Install Flask:
+   ```
+   cd todo-app-python
+   ```
+
+3. Install dependencies.
+
+   ```
+   pip install -r requirements.txt
+   ```
+
+4. Run the Flask application.
+
+   ```
+   python app.py
+   ```
+
+5. Open your browser and go to [http://localhost:5000](http://localhost:5000) to access the ToDo app.
+
+## Usage
+
+- Add a new task by entering it in the input field and clicking the "Add" button.
+- Complete a task by clicking the "Complete" button next to the task.
+- Delete a task by clicking the "Delete" button next to the task.
+
+## Docker
+
+Build and run the Docker container.
 
 ```bash
-pip install flask
+docker build -t todo-app .
+docker run -d -p 5000:5000 todo-app
 ```
 
-### Running the Application
-
-1. Clone the repository:
-
-```bash
-git clone <repo-link>
-```
-
-2. Navigate to the project directory:
-
-```bash
-cd my-todo-app
-```
-
-3. Run the Flask application:
-
-```bash
-python app.py
-```
-
-4. Open your web browser and go to [http://localhost:5000](http://localhost:5000) to use the ToDo list app.
-
-## Project Structure
-
-- **/app.py**: Main file containing the Flask application.
-- **templates/index.html**: HTML template for rendering the ToDo list.
-- **static/style.css**: CSS file for styling the application.
-- **todo/**init**.py**: Empty file to make the `todo` directory a Python package.
-- **todo/tasks.py**: Module containing functions to manage tasks in memory.
+Access the app at [http://localhost:5000](http://localhost:5000).
 
 ## Contributing
 
