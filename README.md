@@ -69,6 +69,26 @@ docker run -d -p 5000:5000 todo-app
 
 Access the app at [http://localhost:5000](http://localhost:5000).
 
+## Deploy on Kubernetes
+
+1. You must have a k8s cluster.
+2. Clone this repo. `git clone https://github.com/faizan35/todo-app-python.git`
+3. Navigate inside the `k8s` dir in the repo.
+4. Create the namespace `kubectl create namespace todo`
+5. Execute this command
+
+   ```sh
+   kubectl apply -f .
+   ```
+
+6. The application should be running on Port `30080`.
+
+## Monitoring
+
+sudo snap install helm --classic
+
+helm repo update
+
 ---
 
 ## Contributing
